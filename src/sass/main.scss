@@ -1,0 +1,16 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/header";
+@import "components/lights";
+@import "components/mainBody";
+@import "components/secBody";
+@import "components/footer";
+
+@import "pages/home";

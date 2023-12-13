@@ -1,0 +1,65 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(1rem);
+  }
+  30% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  65% {
+    transform: translateX(1rem);
+  }
+  80% {
+    transform: translateX(0.7rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+// @keyframes swing {
+//   0%,
+//   100% {
+//     background-position: 0 0; /* Position of the first sprite */
+//   }
+//   15% {
+//     background-position: -100% 0; /* Position of the second sprite */
+//   }
+//   35% {
+//     background-position: -200% 0; /* Position of the third sprite */
+//   }
+//   55% {
+//     background-position: -100% 0; /* Position of the third sprite */
+//   }
+//   75% {
+//     background-position: -300% 0; /* Position of the fourth sprite */
+//   }
+// }

@@ -1,0 +1,119 @@
+.main__body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &-container {
+    max-width: 100rem;
+    min-width: 80rem;
+    max-height: 50rem;
+    min-height: 40rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-dark-light, 0.801),
+        rgba($color-dark-dark, 0.803)
+      ),
+      url("/src/images/main-bkgrd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    position: relative;
+    margin: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding: 5rem;
+
+    &-mainList {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 5rem 0;
+
+      &-button {
+        background-color: rgba($color-dark-dark, 0.203);
+        border: none;
+        font-size: 3rem;
+        color: $color-red-secondary;
+
+        &:active {
+          transform: scale(1.2);
+        }
+      }
+      &-child {
+        list-style: none;
+        &-img {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 30%;
+        }
+      }
+
+      &-list {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    &-search {
+      display: flex;
+      justify-content: center;
+      &-input {
+        width: 60%;
+        height: 3rem;
+        background-color: transparent;
+        border-style: none;
+        border-bottom: 0.5rem solid $color-white;
+        color: $color-red-primary;
+        font-family: "Mountains of Christmas", serif;
+        font-size: 3rem;
+        font-weight: 700;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      margin: 5rem auto 0 auto;
+      border-bottom: 1rem solid $color-white;
+      border-radius: 40%;
+
+      width: 50%;
+      &-text {
+        color: $color-red-primary;
+        font-size: 4rem;
+      }
+    }
+
+    &-lights {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100%;
+    }
+  }
+
+  &-container::before {
+    content: "";
+    position: absolute;
+
+    top: -3rem;
+    left: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    background: repeating-linear-gradient(
+      -45deg,
+      $color-green-primary,
+      $color-green-secondary 1rem,
+      $color-white 1rem,
+      $color-white 2rem
+    );
+    border-radius: 3rem;
+    z-index: -1;
+  }
+}

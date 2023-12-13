@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-dark-light, 0.501),
+      rgba($color-dark-dark, 0.503)
+    ),
+    url("/src/images/main-bkgrdall.jpg");
+  text-shadow: 0.05rem 0.05rem 0.2rem $color-white;
+}

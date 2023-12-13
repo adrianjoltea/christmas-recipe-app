@@ -1,0 +1,136 @@
+.sec__body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &-container {
+    width: 160rem;
+    height: 80rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-dark-light, 0.801),
+        rgba($color-dark-dark, 0.803)
+      ),
+      url("/src/images/main-bkgrd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    position: relative;
+    margin: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding: 5rem;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1rem solid $color-white;
+      border-radius: 10%;
+      &-h2 {
+        margin-bottom: 1rem;
+        font-size: 5rem;
+        color: $color-red-primary;
+      }
+    }
+
+    &-split {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+
+      &-details {
+        &-title {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2rem;
+          font-size: 5rem;
+          color: $color-red-secondary;
+        }
+        &-ingredients {
+          display: flex;
+          padding: 5rem;
+          justify-content: center;
+
+          &-ing {
+            list-style: none;
+            font-size: 2rem;
+            width: 20rem;
+            color: $color-red-primary;
+            font-family: sans-serif;
+            font-weight: 700;
+          }
+          &-ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+          }
+        }
+      }
+
+      &-image {
+        width: 40%;
+        height: 100%;
+        // border: 1rem solid white;
+        &-img {
+          width: 100%;
+          height: 35rem;
+          border-bottom: 1rem solid $color-white;
+
+          border-radius: 10%;
+        }
+        &-details {
+          display: flex;
+          justify-content: space-around;
+          gap: 5rem;
+          font-size: 5rem;
+          color: $color-red-secondary;
+          margin-top: 10rem;
+
+          &-time {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+          }
+          &-servings {
+            display: flex;
+            gap: 2rem;
+            &-body {
+              display: grid;
+            }
+            &-btn {
+              background-color: transparent;
+              border: none;
+              color: $color-red-secondary;
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+      &-details {
+        width: 60%;
+        height: 100%;
+        border-left: 1rem solid white;
+      }
+    }
+  }
+  &-container::before {
+    content: "";
+    position: absolute;
+
+    top: -3rem;
+    left: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    background: repeating-linear-gradient(
+      -45deg,
+      $color-green-primary,
+      $color-green-secondary 1rem,
+      $color-white 1rem,
+      $color-white 2rem
+    );
+    border-radius: 3rem;
+    z-index: -1;
+  }
+}
